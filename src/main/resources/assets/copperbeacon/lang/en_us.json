@@ -1,0 +1,13 @@
+{
+  "itemGroup.copperbeacon": "Example Mod Tab",
+  "block.copperbeacon.example_block": "Example Block",
+  "item.copperbeacon.example_item": "Example Item",
+
+  "copperbeacon.configuration.title": "Copper Beacon Configs",
+  "copperbeacon.configuration.section.copperbeacon.common.toml": "Copper Beacon Configs",
+  "copperbeacon.configuration.section.copperbeacon.common.toml.title": "Copper Beacon Configs",
+  "copperbeacon.configuration.items": "Item List",
+  "copperbeacon.configuration.logDirtBlock": "Log Dirt Block",
+  "copperbeacon.configuration.magicNumberIntroduction": "Magic Number Text",
+  "copperbeacon.configuration.magicNumber": "Magic Number"
+}
