@@ -4,11 +4,10 @@ import java.lang.reflect.Field;
 
 import com.javiluli.copperbeacon.CopperBeacon;
 import com.javiluli.copperbeacon.util.ModLogger;
-import com.mojang.blaze3d.systems.RenderSystem;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.BeaconScreen;
-import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
@@ -84,12 +83,9 @@ public class CustomBeaconScreen extends BeaconScreen {
         int relX = (this.width - this.imageWidth) / 2;
         int relY = (this.height - this.imageHeight) / 2;
 
-        // Renderizar el fondo de la GUI
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        // Renderizar el fondo de la interfaz del beacon
+        guiGraphics.blit(RenderPipelines.GUI_TEXTURED, CUSTOM_GUI_TEXTURE, relX, relY, 0.0F, 0.0F, this.imageWidth, this.imageHeight, 256, 256);
 
-        // Renderizar el fondo
-        guiGraphics.blit(RenderType::guiTextured, CUSTOM_GUI_TEXTURE, relX, relY, 0.0F, 0.0F, this.imageWidth, this.imageHeight, 256, 256);
-        
         // Renderizar los iconos de los ingredientes
         renderIngredient(guiGraphics, relX, relY);
     }
