@@ -9,7 +9,7 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.BeaconScreen;
 import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.BeaconMenu;
 import net.minecraft.world.inventory.Slot;
@@ -26,7 +26,7 @@ public class CustomBeaconScreen extends BeaconScreen {
     /**
      * TEXTURAS
      */
-    private static final ResourceLocation CUSTOM_GUI_TEXTURE = ResourceLocation.fromNamespaceAndPath(CopperBeacon.MODID, "textures/gui/container/beacon.png");
+	private static final Identifier CUSTOM_GUI_TEXTURE = Identifier.fromNamespaceAndPath(CopperBeacon.MODID, "textures/gui/container/beacon.png");
 
 	/**
 	 * CONFIGURACION DE DIMENSIONES
